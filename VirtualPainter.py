@@ -63,18 +63,18 @@ while True:
             # xp, yp = 0, 0
             print("Selection Mode")
             # Checking for the click
-            if y1 < 125:
-                if 250 < x1 < 450:
-                    #header = overlayList[0]
+            if y1 < 126:
+                if 100 < x1 < 220:
+                    header = overlayList[0]
                     drawColor = (255, 0, 255)
-                elif 550 < x1 < 750:
-                    #header = overlayList[1]
+                elif 250 < x1 < 350:
+                    header = overlayList[1]
                     drawColor = (255, 0, 0)
-                elif 800 < x1 < 950:
-                    #header = overlayList[2]
+                elif 380 < x1 < 500:
+                    header = overlayList[2]
                     drawColor = (0, 255, 0)
-                elif 1050 < x1 < 1200:
-                    #header = overlayList[3]
+                elif 520 < x1 < 640:
+                    header = overlayList[3]
                     drawColor = (0, 0, 0)
             cv2.rectangle(img, (x1, y1 - 25), (x2, y2 + 25), drawColor, cv2.FILLED)
  
@@ -111,10 +111,13 @@ while True:
  
  
     # Setting the header image
-    #img[0:125, 0:640] = header
+    img[0:126, 0:640] = header
     img = cv2.addWeighted(img,0.5,imgCanvas,0.5,0)
     cv2.imshow("Image", img)
     #cv2.imshow("Canvas", imgCanvas)
     #cv2.imshow("Inv", imgInv)
     cv2.waitKey(1)
  
+    
+cap.release()   # stop capturing the image/video
+cv2.destroyAllWindows()
