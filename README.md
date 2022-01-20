@@ -14,4 +14,4 @@
 </div>
 
 # <div align="center">AI Virtual Paint App</div>
-<div align="center"><img src="https://github.com/Pradnya1208/AI-Virtual-Paint-App/blob/main/output/intro.gif?raw=true"></div>
+<div align="center"><img src="https://github.com/Pradnya1208/AI-Virtual-Paint-App/blob/main/output/intro.gif?raw=true" width="50%"></div>
